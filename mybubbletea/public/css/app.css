@@ -1,0 +1,179 @@
+.slide-container{
+    position: absolute;
+    top: 30%;
+    left: 20%;
+}
+.text{
+    color: #A24E3D;
+    text-align:justify;
+    width: 350px;
+    height: 100px;
+}
+.slide-text{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 25px;
+}
+h1{
+    color: #333;
+}
+h2{
+    color: rgba(233, 197, 136, 1);
+}
+.divrad{
+    position: absolute;
+    transition: transform 2s ease-in-out;
+}
+body {
+    margin: 0;
+}
+#rad1{
+    border: 1px solid rgba(233, 197, 136, 0.3);
+    background-color: rgba(233, 197, 136, 0.3);
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+    width: 150px;
+    height: 110px;
+}
+#rad2{
+    border: 1px solid rgba(162, 78, 61, 0.4);
+    background-color: rgba(162, 78, 61, 0.4);
+    border-radius: 30% 70% 70% 30% / 45% 77% 23% 55%  ;
+    width: 150px;
+    height: 110px;
+}
+#rad3{
+    border: 1px solid rgba(233, 197, 136, 0.3);
+    background-color: rgba(233, 197, 136, 0.3);
+    border-radius: 31% 69% 76% 24% / 61% 65% 35% 39% ;
+    width: 150px;
+    height: 130px;
+}
+#rad4{
+    border: 1px solid rgba(162, 78, 61, 0.4);
+    background-color: rgba(162, 78, 61, 0.4);
+    border-radius: 46% 54% 20% 80% / 76% 44% 56% 24% ;
+    width: 150px;
+    height: 150px;
+}
+.slide-image{
+    border-radius: 10px;
+    width: 350px;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    right:-550px;
+}
+
+
+
+.slide-dot {
+    text-align: center;
+    position: absolute;
+    bottom: 15%;
+    left: 48%;
+}
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 4px;
+    background-color: #333;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    height: 12px;
+    width: 12px;
+    background-color: rgba(233, 197, 136, 1);
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.btn{
+    display : flex;
+    justify-content: center;
+    margin: 4px;
+    padding: 10px;
+    background-color: rgba(233, 197, 136, 0.8);
+    color: white;
+}
+
+.profil-title{
+    display: flex;
+    justify-content: center;
+    margin: 4px;
+    padding: 10px;
+    color: rgba(233, 197, 136, 0.8);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  appearance: textfield;
+}
+
+/* Popup container */
+.popup {
+    display: none;
+    position: fixed;
+    top: 90px; /* Adjust the top position as needed */
+    right: 20px; /* Adjust the right position as needed */
+    border: 1px solid #ccc;
+    background-color: beige;; /* White background */
+    box-shadow: 0 0 10px rgba(233, 197, 136, 0.8); /* Box shadow for a subtle lift */
+    padding: 15px;
+    z-index: 1000;
+    border-radius: 8px; /* Rounded corners */
+    max-width: 300px; /* Maximum width of the popup */
+}
+
+/* Popup content */
+.popup-content {
+    text-align: center;
+}
+
+/* Close button */
+.close {
+    color: #555;
+    float: right;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.close:hover,
+.close:focus {
+    color: #333; /* Darker color on hover */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn_add_cart{
+    display: flex;
+    justify-content: center;
+    margin: 4px;
+    padding: 10px;
+    background-color: rgba(233, 197, 136, 0.8);
+    color: white;
+    border: none;
+    cursor: pointer;
+}

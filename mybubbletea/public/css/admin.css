@@ -1,0 +1,123 @@
+.all{
+    margin: 100px;
+    box-shadow: 0 6px 10px rgba(233, 197, 136, 1);
+    width: 400px;
+    left: 500px;
+    padding: 4px;
+}
+
+.category{
+    display : flex;
+    justify-content: center;
+    margin: 4px;
+    padding: 10px;
+    background-color: rgba(233, 197, 136, 0.53);
+    color: white;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:beige;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5em;
+}
+
+.container {
+    background-color: rgba(233, 197, 136, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(233, 197, 136, 1);
+    margin-top: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input, textarea {
+    margin-bottom: 16px;
+    padding: 8px;
+}
+
+.btn_add_product {
+    padding: 10px;
+    background-color: rgba(233, 197, 136, 0.53);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn_add_product:hover {
+    background-color: rgba(233, 197, 136, 0.8);
+}
+
+.dialog {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: beige;
+    box-shadow: 0 4px 8px rgba(233, 197, 136, 0.8);
+    z-index: 1;
+    border-radius: 8px;
+}
+
+.dialog-content {
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #555; /* Adjust the color as needed */
+}
+
+/* Style for the form fields in the dialog */
+.dialog-content form {
+    display: flex;
+    flex-direction: column;
+}
+
+.dialog-content label {
+    margin-bottom: 8px;
+    color: #333; /* Adjust the color as needed */
+}
+
+.dialog-content input,
+.dialog-content textarea {
+    margin-bottom: 16px;
+    padding: 8px;
+    border: 1px solid #ccc; /* Adjust the border color as needed */
+    border-radius: 4px;
+    background-color: beige;
+}
+
+/* Style for the buttons in the dialog */
+.dialog-content button {
+    padding: 10px;
+    margin-right: 8px;
+    background-color: rgba(233, 197, 136, 0.8);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.dialog-content button:hover {
+    background-color: rgba(233, 197, 136, 1);
+}
